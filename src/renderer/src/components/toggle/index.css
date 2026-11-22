@@ -1,0 +1,40 @@
+.toggle_container {
+    .switch {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 38px;
+        height: 20px;
+        border-radius: 35px;
+        background: #0A373B;
+        box-shadow: 0 0 4px 0 #14141440 inset;
+        padding: 1px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: #65E7C2;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        &:checked {
+            background: #65E7C2;
+
+            &::before {
+                background: #0A373B;
+                transform: translateX(100%);
+            }
+        }
+
+        &.readOnly {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}

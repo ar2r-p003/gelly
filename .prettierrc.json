@@ -1,0 +1,29 @@
+{
+  "trailingComma": "none",
+  "tabWidth": 3,
+  "semi": true,
+  "singleQuote": false,
+  "arrowParens": "avoid",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "printWidth": 80,
+  "parser": "typescript",
+  "overrides": [
+    {
+      "files": "*.css",
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 60,
+        "parser": "css"
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 60,
+        "parser": "json"
+      }
+    }
+  ]
+}

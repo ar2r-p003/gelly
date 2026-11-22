@@ -1,0 +1,269 @@
+.overview_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    padding: 12px;
+    box-sizing: border-box;
+
+    > .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+
+        .text_container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .label {
+                font-size: 24px;
+                font-weight: 600;
+                color: #F3F7F5;
+            }
+
+            .today {
+                font-size: 14px;
+                font-weight: 400;
+                color: #92A8AC;
+            }
+        }
+
+        button {
+            padding: 12px;
+            background: #65E7C2;
+            border: none;
+            border-radius: 12px;
+            color: #082C31;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            &:hover {
+                background: #65E7C299;
+            }
+        }
+    }
+
+    .stats_container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        > .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #F3F7F5;
+        }
+
+        .stats {
+            display: flex;
+            gap: 12px;
+
+            .stat_item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 16px;
+                background: #101E22;
+                border-radius: 16px;
+
+                .label {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #92A8AC;
+                }
+
+                .value {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #F3F7F5;
+                }
+
+                .info {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #92A8AC;
+                }
+            }
+        }
+    }
+
+    .projects_container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > .label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #F3F7F5;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #92A8AC;
+                }
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: #65E7C2;
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+            }
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            background: #101E22;
+            border-radius: 16px;
+            max-height: 150px;
+            overflow-y: auto;
+
+            .project_item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px;
+
+                &:not(:first-child) {
+                    border-top: 1px solid #243439;
+                }
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                }
+
+                .icon_wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    background: #173A3B;
+                    border-radius: 12px;
+                }
+
+                .folder_info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .folder_name {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #F3F7F5;
+                    }
+
+                    .folder_path {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #92A8AC;
+                    }
+                }
+
+                .delete_button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    padding: 9px;
+                    background: none;
+                }
+            }
+        }
+    }
+
+    .week_container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > .label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #F3F7F5;
+            }
+        }
+
+        .week_days {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .day_item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                padding: 13px;
+                background: #101E22;
+                border-radius: 14px;
+
+                &.today {
+                    background: #65E7C2;
+
+                    span {
+                        color: #174B4C;
+                    }
+
+                    .dot {
+                        background: #174B4C;
+                    }
+                }
+
+                .day {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #92A8AC;
+                    text-transform: uppercase;
+                }
+
+                .date {
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #F3F7F5;
+                }
+
+                .dot {
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: #39AEAF;
+                }
+            }
+        }
+    }
+}

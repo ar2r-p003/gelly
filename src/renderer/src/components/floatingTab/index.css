@@ -1,0 +1,45 @@
+.floating_tab_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background: #101E22;
+    border-radius: 12px;
+    position: relative;
+    gap: 4px;
+
+    .indicator {
+        height: calc(100% - 8px);
+        background: #1C3A3D;
+        position: absolute;
+        left: 4px;
+        right: 4px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 12px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        &.active {
+            span {
+                color: #75EDCD;
+            }
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            color: #92A8AC;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+Gelly Artwork License
+
+Copyright (c) 2026 Artur Petrosyan (https://github.com/ar2r-p003/gelly)
+
+The Gelly artwork is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
+
+Full license text: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+Summary:           https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+WHAT THIS COVERS
+
+  - The Gelly character: the blob and leaf artwork, including the SVG paths
+    in src/renderer/**/Companion.tsx and any other SVG or image of the character
+  - The app icons and tray icons (build/icon.*, resources/**)
+  - The name "Gelly" when used to identify the character
+
+WHAT THIS MEANS IN SHORT
+
+  You may share the artwork, unmodified, with credit to Artur Petrosyan, for
+  noncommercial purposes. You may not:
+
+  - sell it or use it commercially,
+  - modify, remix, redraw, recolor or build upon it and share the result,
+  - use it in your own project, app, game, product or brand,
+  - present it as your own work.
+
+  Unmodified copies of the artwork that ship inside unmodified copies of the
+  Gelly app are fine, under the code license (see LICENSE).
+
+  Changing the colors through the app's own settings, for your own personal
+  use on your own computer, is allowed. That is use of the app, not
+  redistribution of the artwork.
+
+FORKS
+
+  If you share a modified version of the Gelly code, replace the character
+  artwork, the icons and the name with your own.
+
+OTHER PERMISSION
+
+  For anything not allowed above, ask first by opening an issue in the
+  repository. Permission is only valid in writing.

@@ -1,0 +1,191 @@
+.stage {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    overflow: visible;
+
+    .companion {
+        width: 100%;
+        height: 100%;
+        -webkit-user-drag: none;
+        user-select: none;
+        -webkit-user-select: none;
+        overflow: visible;
+        animation: breathe 3s ease-in-out infinite;
+        transform-origin: 50% 100%;
+
+        &.dancing {
+            --beat: 0.55s;
+            --loops: 4;
+            animation: dance calc(var(--beat) * 4) ease-in-out infinite;
+
+            .leaf {
+                animation: leaf-dance calc(var(--beat) * 2) ease-in-out infinite alternate;
+            }
+
+            .eye {
+                animation: eye-dance calc(var(--beat) * 2) ease-in-out infinite;
+            }
+        }
+
+        &.sleeping {
+            animation: sleep-breathe 6s ease-in-out infinite;
+
+            .leaf {
+                animation: leaf-droop 6s ease-in-out infinite;
+            }
+
+            .eye {
+                animation: none;
+                transform: scaleY(0.03);
+            }
+
+            .eyes {
+                transform: translateY(4px);
+            }
+
+            .z {
+                animation: z-float 3.6s ease-in-out infinite;
+            }
+
+            .z2 {
+                animation-delay: 1.2s;
+            }
+
+            .z3 {
+                animation-delay: 2.4s;
+            }
+        }
+    }
+
+    svg * {
+        transform-box: fill-box;
+    }
+
+    .leaf {
+        transform-origin: 50% 100%;
+        animation: sway 2.4s ease-in-out infinite alternate;
+    }
+
+    .eyes {
+        transition: transform 120ms ease-out;
+    }
+
+    .eye {
+        transform-origin: 50% 50%;
+        animation: blink 4s infinite;
+    }
+}
+
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.03, 0.97);
+    }
+}
+
+@keyframes sway {
+    from {
+        transform: rotate(-6deg);
+    }
+    to {
+        transform: rotate(6deg);
+    }
+}
+
+@keyframes blink {
+    0%, 94%, 100% {
+        transform: scaleY(1);
+    }
+    97% {
+        transform: scaleY(0.1);
+    }
+}
+
+@keyframes dance {
+    0% {
+        transform: translate(0, 0) rotate(0) scale(1, 1);
+    }
+    12.5% {
+        transform: translate(-8px, -14px) rotate(-7deg) scale(0.97, 1.05);
+    }
+    25% {
+        transform: translate(-8px, 0) rotate(-7deg) scale(1.06, 0.92);
+    }
+    37.5% {
+        transform: translate(8px, -14px) rotate(7deg) scale(0.97, 1.05);
+    }
+    50% {
+        transform: translate(8px, 0) rotate(7deg) scale(1.06, 0.92);
+    }
+    62.5% {
+        transform: translate(0, -24px) rotate(0) scale(0.94, 1.1);
+    }
+    75% {
+        transform: translate(0, 0) rotate(0) scale(1.08, 0.9);
+    }
+    87.5% {
+        transform: translate(0, -6px) rotate(-5deg) scale(1, 1);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0) scale(1, 1);
+    }
+}
+
+@keyframes leaf-dance {
+    from {
+        transform: rotate(-16deg);
+    }
+    to {
+        transform: rotate(16deg);
+    }
+}
+
+@keyframes eye-dance {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.8) translateY(2px);
+    }
+}
+
+@keyframes sleep-breathe {
+    0%, 100% {
+        transform: scale(1, 1) translateY(0);
+    }
+    50% {
+        transform: scale(1.04, 0.95) translateY(2px);
+    }
+}
+
+@keyframes leaf-droop {
+    0%, 100% {
+        transform: rotate(-14deg);
+    }
+    50% {
+        transform: rotate(-18deg);
+    }
+}
+
+@keyframes z-float {
+    0% {
+        opacity: 0;
+        transform: translate(0, 8px) scale(0.6) rotate(-8deg);
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(10px, -22px) scale(1.1) rotate(8deg);
+    }
+}

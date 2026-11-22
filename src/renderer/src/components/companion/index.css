@@ -1,0 +1,7 @@
+.companion {
+    .z {
+        opacity: 0;
+        font-family: system-ui, sans-serif;
+        transform-origin: 50% 50%;
+    }
+}
