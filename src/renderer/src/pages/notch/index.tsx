@@ -39,7 +39,7 @@ const ExpandedView = ({ notchHeight }: { notchHeight: number }) => {
          <FloatingTab
             tabs={[
                { label: "Overview", value: "overview" },
-               { label: "Companion", value: "companion" },
+               { label: "Gelly", value: "companion" },
                { label: "Settings", value: "settings" }
             ]}
             onChange={setView}

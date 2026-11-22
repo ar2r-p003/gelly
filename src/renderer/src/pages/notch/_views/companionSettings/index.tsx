@@ -90,13 +90,13 @@ const CompanionSettings = () => {
          <div className="text_container">
             <span className="label">A little more you</span>
             <span className="sub_label">
-               Choose your companion’s colors. Make this space yours
+               Choose your Gelly’s colors. Make this space yours
             </span>
          </div>
 
          <div className="current_settings">
             <div className="top">
-               <span className="label">Your companion palette</span>
+               <span className="label">Your Gelly palette</span>
                <button className="apply_btn" onClick={handleSave}>
                   <span>Apply</span>
                </button>

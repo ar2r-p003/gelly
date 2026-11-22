@@ -24,8 +24,8 @@ A small desktop companion that lives on your screen. Gelly is a squishy green bl
 
 <table>
   <tr style="border: none">
-    <td width="50%" style="border: none"><img src="docs/gelly-colors.png" alt="Gelly in different colors" width="100%"></td>
     <td width="50%" style="border: none"><img src="docs/overview.png" alt="Gelly's notch overview panel" width="100%"></td>
+    <td width="50%" style="border: none"><img src="docs/gelly-colors.png" alt="Gelly in different colors" width="100%"></td>
   </tr>
 </table>
 

@@ -20,8 +20,8 @@ export function createTray(): Tray {
    tray.setToolTip("Gelly");
    tray.setContextMenu(
       Menu.buildFromTemplate([
-         { label: "Show Companion", click: showWindow },
-         { label: "Hide Companion", click: hideWindow },
+         { label: "Show Gelly", click: showWindow },
+         { label: "Hide Gelly", click: hideWindow },
          { type: "separator" },
          { label: "Quit App", click: () => app.quit() }
       ])

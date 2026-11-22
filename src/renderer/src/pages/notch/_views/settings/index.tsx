@@ -23,7 +23,7 @@ const Settings = () => {
          <div className="top">
             <span className="label">Settings</span>
             <span className="sub_label">
-               A few preferences to make notch feel like home.
+               A few preferences to make app feel like yours
             </span>
          </div>
 
@@ -34,7 +34,7 @@ const Settings = () => {
                <div className="text_container">
                   <span className="label">Launch at startup</span>
                   <span className="desc">
-                     Open notch automatically when you sign in.
+                     Open Gelly automatically when you sign in.
                   </span>
                </div>
 
