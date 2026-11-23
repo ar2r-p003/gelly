@@ -13,6 +13,7 @@ files:
 asarUnpack:
   - resources/**
   - node_modules/get-windows/**
+  - node_modules/@microsoft/dynwinrt/**
 win:
   executableName: gelly
   target:

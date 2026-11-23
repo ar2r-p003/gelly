@@ -31,7 +31,7 @@ A small desktop companion that lives on your screen. Gelly is a squishy green bl
 
 ## Download
 
-Get the latest installer from the [Releases](https://github.com/your-username/gelly/releases) page.
+Get the latest installer from the [Releases](https://github.com/ar2r-p003/gelly/releases) page.
 
 | Platform | File |
 |---|---|
@@ -71,12 +71,12 @@ Gelly is free and made in my spare time. I will update it during time with more 
 
 ## Development
 
-Requirements: Node.js 22 or newer and npm.
+Requirements: Node.js 22 or newer, npm. For windows python and C++ build tools are also required.
 
 ```bash
-git clone https://github.com/your-username/gelly.git
+git clone https://github.com/ar2r-p003/gelly.git
 cd gelly
-npm install
+npm ci
 npm run dev
 ```
 

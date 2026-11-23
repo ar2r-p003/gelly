@@ -26,12 +26,14 @@
     "@electron-toolkit/utils": "^4.0.0",
     "@hugeicons/core-free-icons": "^4.4.0",
     "@hugeicons/react": "^1.1.10",
+    "@microsoft/dynwinrt": "^0.1.0-preview.24",
     "chokidar": "^6.0.0",
     "dayjs": "^1.11.23",
     "diff": "^9.0.0",
     "electron-store": "^12.0.0",
     "electron-updater": "^6.8.9",
-    "get-windows": "^10.0.0"
+    "get-windows": "^10.0.0",
+    "@winapp/bindings": "file:_native/winrt"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^3.0.1",
@@ -53,5 +55,8 @@
     "react-dom": "^19.3.0",
     "typescript": "^5.9.3",
     "vite": "^8.3.4"
+  },
+  "optionalDependencies": {
+    "@microsoft/dynwinrt": "^0.1.0-preview.24"
   }
 }
